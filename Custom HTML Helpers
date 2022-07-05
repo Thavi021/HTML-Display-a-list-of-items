@@ -1,0 +1,12 @@
+@using AutoDAL.Models
+@helper SHowInventory(Inventory item)
+{
+@item.Make<text>-</text>@item.Color<text>(</text>@item.PetName<text>)</text>
+}
+//After the @foreach, add the call to ShowInventory():
+
+@foreach(var item in Model)
+{
+@ShowInventory(item)
+<!--rest removed for brevity-->
+}
