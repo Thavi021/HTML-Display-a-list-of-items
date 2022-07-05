@@ -1,0 +1,9 @@
+@foreach(var item in Model)
+{
+int c = 0;
+<tr></tr>
+}
+//or
+@{
+ShowInventory(item);
+}
